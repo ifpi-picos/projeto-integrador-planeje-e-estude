@@ -137,7 +137,7 @@ color: var(--grad-clr1)
     cursor: pointer;
     position: absolute;
     left: 50%;
-    top: 304px;
+    top: 400px; 
     transform: translateX(-50%);
     width: 143. 67px;
     height: 40px;
@@ -234,35 +234,4 @@ p {
     100% {
         width: 143.67px;
     }
-}
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
-}
-footer mark {
-    padding: 8px 30px;
-    border-radius: 7px;
-}
-footer a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #003;
 }
