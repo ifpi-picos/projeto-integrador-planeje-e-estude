@@ -1,0 +1,115 @@
+/* Estrutura do layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Promoção */
+.promo {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #28a745;
+    color: white;
+}
+
+.promo .promo-text h1 {
+    font-size: 36px;
+}
+
+.promo .promo-image img {
+    width: 250px;
+}
+
+/* Cartão de preços */
+.pricing, .planos {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.card, .plano {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.pricing .price, .plano .btn {
+    color: #e53935;
+    font-weight: bold;
+}
+
+.plano .btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 50px;
+    }
+}

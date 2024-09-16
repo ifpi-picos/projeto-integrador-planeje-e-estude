@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #eb7d0f;
+    padding: 10px 0;
+    color: rgb(45 45 45);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn-login {
+    background-color: #eb7d0f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #eb7d0f;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn-join {
+    padding: 12px 20px;
+    background-color: #eb7d0f;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-join:hover {
+    background-color: #eb7d0f;
+}
+
+.topics h2, .popular-members h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #eb7d0f;
+    text-align: center;
+}
+
+.topic-list, .members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.topic, .member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.topic h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.btn-view {
+    padding: 10px 15px;
+    background-color: #eb7d0f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+    background-color: #eb7d0f;
+}
+
+.member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #eb7d0f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}

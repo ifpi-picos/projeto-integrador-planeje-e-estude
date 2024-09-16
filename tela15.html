@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Compra</title>
+    <link rel="stylesheet" href="css/tela11.css">
+</head>
+<body>
+    <div class="container">
+        <div class="account-section">
+            <h2>Já tenho conta</h2>
+            <form class="login-form">
+                <label for="email-login">Email</label>
+                <input type="email" id="email-login" placeholder="Digite seu email" required>
+
+                <label for="password-login">Senha</label>
+                <input type="password" id="password-login" placeholder="Digite sua senha" required>
+
+                <a href="tela5.html" class="btn-primary">Entrar</a>
+            </form>
+
+            <hr>
+
+            <h2>Criar uma conta</h2>
+            <form class="signup-form">
+                <label for="email-signup">Email</label>
+                <input type="email" id="email-signup" placeholder="Digite seu email" required>
+
+                <label for="password-signup">Senha</label>
+                <input type="password" id="password-signup" placeholder="Crie uma senha" required>
+
+                <button type="submit" class="btn-primary">Criar Conta</button>
+            </form>
+
+            <div class="social-login">
+                <p>Ou continue com:</p>
+                <button class="btn-social facebook">Facebook</button>
+                <button class="btn-social google">Google</button>
+                <button class="btn-social apple">linkedin</button>
+            </div>
+        </div>
+
+        <div class="purchase-summary">
+            <h2>Resumo da Compra</h2>
+            <div class="purchase-details">
+                <p><strong>Produto:</strong> Plano de Estudos Médio para Matérias Básicas (6 meses)</p>
+                <p><strong>Preço:</strong> R$ 430,80</p>
+                <p><strong>Parcelamento:</strong> 12x R$35,90 sem juros</p>
+                <p><strong>Opção Pix:</strong> R$ 420,00 à vista</p>
+            </div>
+            
+            <h3>Formas de Pagamento</h3>
+            <div class="payment-options">
+                <button class="btn-payment">Pagar com Cartão de Crédito</button>
+                <button class="btn-payment">Pagar com Pix</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

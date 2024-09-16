@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-section, .purchase-summary {
+    width: 48%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.btn-social {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-social.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.btn-social.google {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.btn-social.apple {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-social:hover {
+    opacity: 0.9;
+}
+
+.purchase-summary {
+    text-align: left;
+}
+
+.purchase-details {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.purchase-details p {
+    margin-bottom: 10px;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-payment {
+    padding: 10px;
+    background-color: #eb7d0f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-payment:hover {
+    background-color: #eb7d0f;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .account-section, .purchase-summary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armazenamento de Estudos</title>
+  <link rel="stylesheet" href="css/armazenamento.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Armazenamento de Estudos</h1>
+    </nav>
+  </header>
+
+  <section class="storage">
+    <h2>Seus Arquivos</h2>
+    <div class="upload-section">
+      <label for="file-upload" class="btn">Upload de Arquivo</label>
+      <input type="file" id="file-upload" class="hidden">
+      <button class="btn">Criar Nova Pasta</button>
+    </div>
+
+    <div class="file-grid">
+      <!-- Exemplo de um arquivo -->
+      <div class="file-item">
+        <img src="file-icon.png" alt="Ícone de Arquivo">
+        <h3>Trabalho de Física.pdf</h3>
+        <button class="btn btn-danger">Excluir</button>
+      </div>
+
+      <!-- Exemplo de uma pasta -->
+      <div class="file-item folder">
+        <img src="folder-icon.png" alt="Ícone de Pasta">
+        <h3>Pasta de Matemática</h3>
+        <button class="btn btn-danger">Excluir</button>
+      </div>
+
+      <!-- Adicione mais arquivos e pastas aqui -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Plataforma de Estudos. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

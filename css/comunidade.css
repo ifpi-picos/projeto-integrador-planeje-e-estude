@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eb7d0f;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  section.subjects {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  section.subjects h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .subject-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .subject-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Ciências da Natureza */
+  .nature {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  /* Matemática */
+  .math {
+    background-color: #1e00ff;
+    color: #fff;
+  }
+  
+  /* Linguagens e Códigos */
+  .language {
+    background-color: #2196f3;
+    color: #fff;
+  }
+  
+  /* Ciências Humanas */
+  .humanities {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+  main {
+      flex-wrap: wrap;
+      flex-direction: column;
+      display: block;
+      justify-content: center;
+      text-align: center;
+  }
+  .pricing {
+      width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+      justify-content: flex-start;
+  }
+
+  header, footer {
+      text-align: left;
+      padding: 20px 50px;
+  }
+}
+  

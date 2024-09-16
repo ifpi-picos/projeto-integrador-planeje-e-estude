@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.login {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.login h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs span {
+    cursor: pointer;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+
+.tabs .active {
+    border-bottom: 2px solid #000;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 70px;
+    height: 70px;
+    background-color: #ddd;
+    border: none;
+    font-size: 2em;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.apple {
+    background-color: #000000;
+    color: white;
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    text-align: right;
+    color: #eb7d0f;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #eb7d0f;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.purchase-summary {
+    width: 35%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.purchase-summary h3 {
+    margin-bottom: 15px;
+}
+
+.purchase-summary ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.purchase-summary ul li {
+    margin-bottom: 10px;
+}
+
+.purchase-summary a {
+    text-decoration: none;
+    color: #eb7d0f;
+}
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 50px;
+    }
+}

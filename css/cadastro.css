@@ -123,3 +123,26 @@ h1{
     background-size: 90px;
     background-position: 10;
 }
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 50px;
+    }
+}

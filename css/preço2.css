@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff9900;
+}
+
+main {
+    padding: 40px;
+}
+
+.header {
+    text-align: center;
+    background-color: #ff9900;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plano {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.plano-header {
+    background-color: #4b0082;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.plano h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plano p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+/* Seção de download do app */
+.app-download img {
+    width: 140px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.app-download img:hover {
+    transform: scale(1.1);
+}
+
+/* Ícones de redes sociais */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Links do rodapé */
+.footer-links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 50px;
+    }
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff9900;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.banner {
+    margin-top: 20px;
+    background-color: #ffd700;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.banner button {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #333;
+}
+@media (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .pricing {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    header, footer {
+        text-align: left;
+        padding: 20px 50px;
+    }
+}
