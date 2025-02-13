@@ -19,7 +19,7 @@ function adicionarUsuario() {
     }).then(response => {
       response.json().then(data => {
         console.log("Usuário cadastrado com sucesso: ", data)
-        window.location.href = 'principal.html'
+        window.location.href = 'tela5.html'
       })
     }).catch(error => {
       console.log("Erro ao cadastrar usuário: ", error)
@@ -54,7 +54,7 @@ function adicionarUsuario() {
       localStorage.setItem('token', token);
   
       // Redireciona para a página inicial
-      window.location.href = 'principal.html';
+      window.location.href = 'tela5.html';
     } catch (error) {
       console.error('Erro no login:', error);
       alert('Erro ao realizar login. Tente novamente mais tarde.');
