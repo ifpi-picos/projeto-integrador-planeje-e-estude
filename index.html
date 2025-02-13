@@ -14,15 +14,17 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="tela5.html" class="sign-in-form">
+
+          <!--Parte de login-->
+          <form onsubmit="event.preventDefault(); loginUsuario();" action="tela5.html" class="sign-in-form">
             <h2 class="title">Entrar</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nome de usuário" />
+              <input type="text" id="nome" placeholder="Nome de usuário" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" id="senha" placeholder="Senha" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Ou faça login com plataformas sociais</p>
@@ -38,19 +40,21 @@
               </a>
             </div>
           </form>
-          <form action="tela5.html" class="sign-up-form">
+
+          <!--Parte de cadastro-->
+          <form onsubmit="event.preventDefault(); adicionarUsuario();" action="tela5.html" class="sign-up-form">
             <h2 class="title">Inscrição</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nome de usuário" />
+              <input type="text" id="nome" placeholder="Nome de usuário" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Senha" />
+              <input type="password" id="senha" placeholder="Senha" />
             </div>
             <input type="submit" class="btn" value="Inscrição" />
             <p class="social-text">Ou inscreva-se em plataformas sociais</p>
@@ -98,5 +102,6 @@
     </div>
 
     <script src="js/login.js"></script>
+    <script src="js/users.js"></script>
   </body>
 </html>
